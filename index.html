@@ -3,24 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Mis cursos</title>
-    <link type="text/css" href="<?php echo $this->config->item('assets_url') ?>/css/bootstrap.css" rel="stylesheet" />
-    <script type="text/javascript" src="<?php echo $this->config->item('assets_url'); ?>/js/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="<?php echo $this->config->item('assets_url'); ?>/js/bootstrap.min.js"></script>
+    <link type="text/css" href="assets/css/bootstrap.css" rel="stylesheet" />
+    <script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <div class="content">
-    <?php if($cursos): ?>
-      <ul>
-        <?php foreach($cursos as $item): ?>
-              <li>
-                <h3><?php echo $item->titulo ?></h3>
-                <a class="btn btn-info" href="curso/show/<?= $item->slug; ?>">Editar</a>
-                <a class="btn btn-danger eliminar_curso"  href="curso/delete/<?= $item->slug; ?>">Borrar</a>
-              </li>
-        <?php endforeach; ?>
-      </ul>
-    <?php endif; ?>
+    <div class="inner cover">
+      <h1 class="cover-heading">Cover your page.</h1>
+      <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+      <p class="lead">
+        <a href="#" class="btn btn-lg btn-default">Learn more</a>
+      </p>
     </div>
-    <script type="text/javascript" src="<?php echo $this->config->item('assets_url'); ?>/js/main/curso.js"></script>
+    <script type="text/javascript" src="assets/js/main/main.js"></script>
   </body>
 </html>
