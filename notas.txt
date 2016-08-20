@@ -2,3 +2,24 @@ Este proyecto :
 Es una plantilla donde mostraremos una lista de cursos ....
 Usaremos :
 Git, Bootstrap, Sass, Jquery
+
+
+Tareas
+
+1º Ramas
+----------------------------------------------------------------------------------------
+    Creas una rama llamada master
+    Creas una rama para mejorar script Jquery.
+    Realizas algo de trabajo en esa rama.
+
+En este momento, recibes una llamada avisandote de un cambio.
+Y sigues los siguientes pasos:
+
+    Vuelves a la rama de producción original.
+    Creas una nueva rama para el problema crítico y lo resuelves trabajando en ella.
+    Tras las pertinentes pruebas, fusionas (merge) esa rama y la envias (push) a la rama de producción.
+    Vuelves a la rama del tema en que andabas antes de la llamada y continuas tu trabajo.
+-----------------------------------------------------------------------------------------
+2º
+-----------------------------------------------------------------------------------------
+  Clonas repositorio
