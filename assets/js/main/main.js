@@ -7,6 +7,7 @@ $(document).on('ready', function(){
     var str = $( "form" ).serialize();
     console.log(str);
     $.getJSON("index.php", str, function(resp){
+      console.log(resp);
       $.each(resp, function(e, v){
         console.log(e +', ' + v);
       });
