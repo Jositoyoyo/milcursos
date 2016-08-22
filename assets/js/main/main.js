@@ -14,8 +14,8 @@ $(document).on('ready', function () {
             }
 
         })
-                .fail(function () {
-                    console.log("error");
+                .fail(function (e) {
+                    console.log(e);
                 })
                 .always(function () {
                     console.log("complete");
