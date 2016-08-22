@@ -5,15 +5,15 @@ $(document).on('ready', function () {
 
         event.preventDefault();
         var str = $("form").serialize();
-        var jqxhr = $.getJSON("index.php", str, function (resp) {
+        var jqxhr = $.getJSON("login.php", str, function (resp) {
             console.log("success");
-            $.each(resp, function (e, v) {
-                console.log(e + ', ' + v);
-            });
+            if (resp.e == 'login') {
+                window.location.href = 'main.html';
+            } else {
+
+            }
+
         })
-                .done(function () {
-                    console.log("second success");
-                })
                 .fail(function () {
                     console.log("error");
                 })
@@ -22,7 +22,7 @@ $(document).on('ready', function () {
                 });
 
         jqxhr.complete(function () {
-            console.log("second complete");
+            console.log("Complete");
         });
 
     });
