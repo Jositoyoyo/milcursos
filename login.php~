@@ -1,10 +1,10 @@
 <?php
 
  $username = empty($_GET['nombre']) ;
- $pass = empty($_GET['email']) ;
- $or = array('login' => false);
+ $pass = empty($_GET['pass']) ;
+ $or = array();
  if($username == 'jositoyoyo' && $pass == '1234') {
-     $or['login'] = true;
+     $or = array('login' => true);
  }
 
 echo json_encode($or);

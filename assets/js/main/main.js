@@ -7,10 +7,11 @@ $(document).on('ready', function () {
         var str = $("form").serialize();
         var jqxhr = $.getJSON("login.php", str, function (resp) {
             console.log("success");
-            if (resp.e == 'login') {
+            console.log(resp.login);
+            if (!resp.e) {            
                 window.location.href = 'main.html';
             } else {
-
+                $("#alert-login").fadeIn(500);
             }
 
         })
